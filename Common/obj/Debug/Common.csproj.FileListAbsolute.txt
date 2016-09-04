@@ -1,0 +1,13 @@
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Common\bin\Debug\Common.dll
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Common\bin\Debug\Common.pdb
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Common\obj\Debug\Common.dll
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Common\obj\Debug\Common.pdb
+F:\Projects\BK\OnlineShop\Common\bin\Debug\Common.dll
+F:\Projects\BK\OnlineShop\Common\bin\Debug\Common.pdb
+F:\Projects\BK\OnlineShop\Common\obj\Debug\Common.dll
+F:\Projects\BK\OnlineShop\Common\obj\Debug\Common.pdb
+F:\Projects\BK\OnlineShop\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+F:\Projects\BK\OnlineShop\Common\bin\Debug\Model.dll
+F:\Projects\BK\OnlineShop\Common\bin\Debug\EntityFramework.dll
+F:\Projects\BK\OnlineShop\Common\bin\Debug\Model.pdb
+F:\Projects\BK\OnlineShop\Common\bin\Debug\EntityFramework.xml

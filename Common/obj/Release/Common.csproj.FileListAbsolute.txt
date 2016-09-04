@@ -1,0 +1,9 @@
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Common\bin\Release\Common.dll
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Common\bin\Release\Common.pdb
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Common\obj\Release\Common.dll
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Common\obj\Release\Common.pdb
+F:\Projects\BK\OnlineShop\Common\bin\Release\Common.dll
+F:\Projects\BK\OnlineShop\Common\bin\Release\Common.pdb
+F:\Projects\BK\OnlineShop\Common\obj\Release\Common.csprojResolveAssemblyReference.cache
+F:\Projects\BK\OnlineShop\Common\obj\Release\Common.dll
+F:\Projects\BK\OnlineShop\Common\obj\Release\Common.pdb

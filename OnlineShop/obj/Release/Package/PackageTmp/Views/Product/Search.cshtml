@@ -1,0 +1,65 @@
+﻿@model List<Model.ViewModel.ProductViewModel>
+@{
+    ViewBag.Title = "Search";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="section group">
+    @foreach (var item in Model)
+    {
+        var url = "/chi-tiet/" + item.MetaTitle + "-" + item.ID;
+        <div class="grid_1_of_4 images_1_of_4">
+            <a href="@url"><img src="@item.Image" alt="@item.Name" /></a>
+            <h2>@item.CateName</h2>
+            <div class="price-details">
+                <div class="price-number">
+                    <p><span class="rupees">$@item.Price</span></p>
+                </div>
+                <div class="add-cart">
+                    <h4><a href="@url">Add to Cart</a></h4>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    }
+
+    <!--Paging-->
+    @if (ViewBag.TotalPage > 1)
+    {
+        var pageDisplay = (int)(ViewBag.MaxPage);
+        var totalPgae = (int)(ViewBag.TotalPage);
+        int currenPgae = (int)(ViewBag.Page);
+
+        //Create numeric links
+        var startPageIndex = Math.Max(1, currenPgae - pageDisplay / 2);
+        var endPageIndex = Math.Min(totalPgae, currenPgae + pageDisplay / 2);
+
+        var link = "/tim-kiem-chung?keyword=" + @ViewBag.KeyWord;
+
+        <nav class="clear">
+            <ul class="pagination">
+                @if (currenPgae > 1)
+                {
+                    <li><a href="@link&page=1" title="Trang đầu" class="first"><<</a></li>
+                    <li><a href="@link&page=@ViewBag.PrivPage" title="Trang trước" class="first"><</a></li>
+                }
+                @for (int i = startPageIndex; i <= endPageIndex; i++)
+                {
+                    if (currenPgae == i)
+                    {
+                        <li><a href="@link&page=@i" class="active" title="Trang @i">@i</a></li>
+                    }
+                    else
+                    {
+                        <li><a href="@link&page=@i" class="pos" title="Trang @i">@i</a></li>
+                    }
+                }
+            </ul>
+        </nav>
+    }
+    @*else
+    {
+        <span>Không có bản ghi nào</span>
+    }*@
+</div>
+

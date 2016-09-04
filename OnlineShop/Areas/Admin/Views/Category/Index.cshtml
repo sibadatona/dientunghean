@@ -1,0 +1,74 @@
+﻿@*@model List<Model.EF.Category>*@
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section header{
+    Danh sách danh mục.
+}
+
+@section jsfooter{
+    <script src="~/Assets/admin/js/mustache.min.js"></script>
+    <script src="~/Assets/admin/js/CategoryController.js"></script>
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Danh sách mục
+            </div>
+            <div class="panel-body">
+                <div class="col-md-12">
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <input type="hidden" value="0" id="hdCategoryId" />
+                            <label for="txtName">Tên danh mục:</label>
+                            <input type="text" id="txtName" maxlength="20" value="" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtOrder">Thứ tự hiển thị:</label>
+                            <input type="number" maxlength="2" id="txtOrder" value="" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label><input type="checkbox" id="cbStatus" checked> Show</label>
+                        </div>
+                        <div class="form-group">
+                            <button id="btnSave" class="btn btn-primary">Save</button>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="col-md-12">
+                    <table class="table table-striped table-hover" id="tableCate">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Tên danh mục</th>
+                                <th>Thứ tự hiển thị</th>
+                                <th>Hiển thị ở trang chủ</th>
+                                <th>#</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tblData">
+                        </tbody>
+                    </table>
+
+                    <script id="template" type="x-tmpl-mustache">
+                        <tr>
+                            <td class="categoryId">{{Id}}</td>
+                            <td class="categoryName">{{Name}}</td>
+                            <td class="categoryOrder">{{DisplayOrder}}</td>
+                            <td class="categoryIsShow">{{{ShowOnHome}}}</td>
+                            <td>
+                                <input type="button" class="btn btn-danger btnDelete" data-id="{{Id}}" value="Delete" />
+                            </td>
+                        </tr>
+                    </script>
+                </div>
+                <!-- /.table-responsive -->
+            </div>
+        </div>
+    </div>
+</div>

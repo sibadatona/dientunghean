@@ -1,0 +1,28 @@
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Model\bin\Release\Model.dll.config
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Model\bin\Release\Model.dll
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Model\bin\Release\Model.pdb
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Model\bin\Release\EntityFramework.dll
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Model\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Model\bin\Release\PagedList.dll
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Model\bin\Release\PagedList.Mvc.dll
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Model\bin\Release\EntityFramework.xml
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Model\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Model\bin\Release\PagedList.xml
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Model\bin\Release\PagedList.Mvc.xml
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Model\obj\Release\Model.csprojResolveAssemblyReference.cache
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Model\obj\Release\Model.dll
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Model\obj\Release\Model.pdb
+F:\Projects\BK\OnlineShop\Model\bin\Release\Model.dll.config
+F:\Projects\BK\OnlineShop\Model\bin\Release\Model.dll
+F:\Projects\BK\OnlineShop\Model\bin\Release\Model.pdb
+F:\Projects\BK\OnlineShop\Model\bin\Release\EntityFramework.dll
+F:\Projects\BK\OnlineShop\Model\bin\Release\EntityFramework.SqlServer.dll
+F:\Projects\BK\OnlineShop\Model\bin\Release\PagedList.dll
+F:\Projects\BK\OnlineShop\Model\bin\Release\PagedList.Mvc.dll
+F:\Projects\BK\OnlineShop\Model\bin\Release\EntityFramework.xml
+F:\Projects\BK\OnlineShop\Model\bin\Release\EntityFramework.SqlServer.xml
+F:\Projects\BK\OnlineShop\Model\bin\Release\PagedList.xml
+F:\Projects\BK\OnlineShop\Model\bin\Release\PagedList.Mvc.xml
+F:\Projects\BK\OnlineShop\Model\obj\Release\Model.csprojResolveAssemblyReference.cache
+F:\Projects\BK\OnlineShop\Model\obj\Release\Model.dll
+F:\Projects\BK\OnlineShop\Model\obj\Release\Model.pdb

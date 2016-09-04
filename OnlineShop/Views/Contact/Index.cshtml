@@ -1,0 +1,50 @@
+﻿@using OnlineShop.Common
+@{
+	ViewBag.Title = "Liên hệ";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section jsFooter{
+<script src="~/Assets/client/js/controller/TestController.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        function initMap() {
+        	var uluru = { lat: 18.738961, lng: 105.539115 };
+            var map = new google.maps.Map(document.getElementById('mapCavans'), {
+                zoom: 18,
+                center: uluru
+            });
+
+            var contentString = '<p>Công ty cố phần Gia Hưng Electronics</p>'
+
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString
+            });
+
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+                title: 'Online Shop'
+            });
+            marker.addListener('click', function () {
+                infowindow.open(map, marker);
+            });
+        }
+        google.maps.event.addDomListener(window, 'load', initMap)
+    </script>
+}
+<div class="content">
+    <div class="section group">
+        <div class="col-md-12">
+            <div class="col-md-6">
+                <h2>Thông tin liên hệ</h2>
+				<p><b>Công ty cố phần Gia Hưng Electronics</b></p>
+				<p>Nam Anh - Nam Đàn - Nghệ An</p>
+				<p>SĐT: 091.11.66.897</p>
+			</div>
+            <div class="col-md-6">
+                <h2>Bản đồ</h2>
+                <div class="map" id="mapCavans" style="width:500px;height:380px;"></div>
+            </div>
+        </div>
+    </div>
+</div>

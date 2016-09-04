@@ -1,0 +1,20 @@
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Entity\bin\Debug\Entity.dll
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Entity\bin\Debug\Entity.pdb
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Entity\bin\Debug\Model.dll
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Entity\bin\Debug\EntityFramework.dll
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Entity\bin\Debug\PagedList.dll
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Entity\bin\Debug\Model.pdb
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Entity\bin\Debug\EntityFramework.xml
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Entity\bin\Debug\PagedList.xml
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Entity\obj\Debug\Entity.dll
+C:\Users\siba\Documents\Visual Studio 2013\Projects\OnlineShop\Entity\obj\Debug\Entity.pdb
+F:\Projects\BK\OnlineShop\Entity\bin\Debug\Entity.dll
+F:\Projects\BK\OnlineShop\Entity\bin\Debug\Entity.pdb
+F:\Projects\BK\OnlineShop\Entity\bin\Debug\Model.dll
+F:\Projects\BK\OnlineShop\Entity\bin\Debug\EntityFramework.dll
+F:\Projects\BK\OnlineShop\Entity\bin\Debug\Model.pdb
+F:\Projects\BK\OnlineShop\Entity\bin\Debug\EntityFramework.xml
+F:\Projects\BK\OnlineShop\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+F:\Projects\BK\OnlineShop\Entity\obj\Debug\Entity.dll
+F:\Projects\BK\OnlineShop\Entity\obj\Debug\Entity.pdb

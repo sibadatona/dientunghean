@@ -1,0 +1,126 @@
+﻿@model Model.EF.Product
+@{
+    ViewBag.Title = "Update";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section header{
+    Chỉnh sửa sản phẩm
+}
+
+@section jsfooter{
+    <script src="~/Content/ckeditor/ckeditor.js"></script>
+    <script src="~/Content/ckfinder/ckfinder.js"></script>
+    <script type="text/javascript">
+        var editor = CKEDITOR.instances['Detail'];
+        if (editor) { CKEDITOR.destroy(true); }
+        CKEDITOR.replace('Detail');
+        CKFinder.setupCKEditor(null, '@Url.Content("~/Content/Ckfinder")')
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.datepicker').datepicker({
+            autoclose: true,
+            todayHighlight: true
+        }); //Initialise any date pickers
+    })
+    </script>
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Nhập thông tin người dùng
+            </div>
+
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        @using (Html.BeginForm("Update", "Product", FormMethod.Post, new { @class = "form-horizontal" }))
+                        {
+                            @Html.AntiForgeryToken()
+
+                            @Html.ValidationSummary(true)
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Name, new { @class = "control-label col-sm-2 required" })
+                                <div class="col-sm-6">
+                                    @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Price, new { @class = "control-label col-sm-2 required" })
+                                <div class="col-sm-6">
+                                    @Html.TextBoxFor(model => model.Price, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Description, new { @class = "control-label col-sm-2 required" })
+                                <div class="col-sm-6">
+                                    @Html.TextBoxFor(model => model.Description, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.CategoryID, new { @class = "control-label col-sm-2 required" })
+                                <div class="col-sm-6">
+                                    @Html.DropDownListFor(model => model.CategoryID, (SelectList)ViewBag.Categories, "-- Chọn danh mục --", new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.CategoryID, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            @*<div class="form-group">
+                                @Html.LabelFor(model => model.Image, new { @class = "control-label col-sm-2 required" })
+                                <div class="col-sm-6">
+                                    <input type="file" name="file" value="@Model.Image" id="file" style="width: 100%;" accept=".jpg,.jpeg,.gif,.png" />
+                                </div>
+                            </div>*@
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Waranty, new { @class = "control-label col-sm-2" })
+                                <div class="col-sm-6">
+                                    @Html.TextBoxFor(model => model.Waranty, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.Waranty, "", new { @class = "text-danger" })
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.TopHot, new { @class = "control-label col-sm-2" })
+                                <div class="col-sm-6">
+                                    @Html.TextBoxFor(model => model.TopHot, new { @class = "form-control datepicker", placeholder = "Nhập ngày cho sản phẩm hot..." })
+                                    @Html.ValidationMessageFor(model => model.TopHot, "", new { @class = "text-danger" })
+                                </div>
+
+                            </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Detail, new { @class = "control-label col-sm-2 required" })
+                                    <div class="col-sm-10">
+                                        @Html.TextAreaFor(model => model.Detail)
+                                        @Html.ValidationMessageFor(model => model.Detail, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-md-offset-2 col-md-10">
+                                        <input type="submit" value="Lưu" class="btn btn-primary" />
+                                    </div>
+                                </div>
+                        }
+                        @Html.ActionLink("Back to List", "Index")
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

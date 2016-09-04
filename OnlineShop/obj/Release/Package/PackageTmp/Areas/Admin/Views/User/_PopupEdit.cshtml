@@ -1,0 +1,98 @@
+﻿@model Model.EF.User
+@*@model List<Model.EF.User>*@
+@*<div class="modal fade"
+         id="mdltransferMoney"
+         tabindex="-1"
+         role="dialog"
+         aria-labelledby="mdlCancelTitle">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <label class="modal-title" id="mdlCancelLabel1">Đã Chuyển Khoản</label>
+                </div>
+                <div class="modal-body">
+                    <input type="radio" name="package" value="" /> 1 Năm - 200.000
+                    <br />
+                    <input type="radio" name="package" value="" /> 2 Năm - 400.000
+                    <br />
+                    <input type="radio" name="package" value="" /> 3 Năm - 600.000
+                    <br />
+                    <input type="radio" name="package" value="" /> 4 Năm - 800.000
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="btnConfirmedCancel" class="btn btn-danger btn-sm">OK</button>
+                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
+                </div>
+
+            </div>
+        </div>
+    </div>*@
+@*<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <label class="modal-title" id="mdlCancelLabel1">Đã Chuyển Khoản</label>
+</div>*@
+<div id="H2034Modal">
+
+    @using (Html.BeginForm("Update", "User", FormMethod.Post))
+    {
+        {
+            @Html.AntiForgeryToken()
+
+            @Html.ValidationSummary(true)
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.UserName)
+                @Html.TextBoxFor(model => model.UserName, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.UserName)
+            </div>
+
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Name)
+                @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Name)
+            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Address)
+                                @Html.TextBoxFor(model => model.Address, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Address)
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Email)
+                                @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Email)
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Phone)
+                                @Html.TextBoxFor(model => model.Phone, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Phone)
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Status)
+                                @Html.CheckBoxFor(model => model.Status)
+                                @Html.ValidationMessageFor(model => model.Status)
+                            </div>
+
+                            @*<div class="form-group">
+                                    <div class="col-md-offset-2 col-md-10">
+                                        <input type="submit" value="Update" class="btn btn-default" />
+                                    </div>
+                                </div>*@
+
+                            <div class="modal-footer">
+                                <button type="button" id="btnConfirmedCancel" class="btn btn-danger btn-sm">OK</button>
+                                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
+                            </div>
+        }
+    }
+
+</div>
